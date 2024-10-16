@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JP</title>
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="jp.JPG" sizes="16x16"> <!-- Sets the website Icon logo -->
+
+<style>
+    
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        height: 60px;
+        width: 60px; 
+        /* Puts the logo on the top left conner */
+    }
+    
+    body {
+        background-image:none; /* Sets the background color */
+        background-size: 100% 100%; /* Makes sure that the background image fit in the whole screen */
+        overscroll-behavior: none; /* Doesn't allow overscroll */
+        /* prevents text from being selected */
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+        /* prevents text from being selected */
+    }
+    
+    .top-middle-text {
+        background-color: black;
+        color: white;
+        padding: 25px 40px;
+        text-align: center;
+        /*sition: absolute;
+        color: white;
+        top: 20px;
+        left: 50%;
+        text-align: center; 
+        /* Puts the text on the top middle of the page */
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container"> <!-- class-container is in style.css -->
+        
+        <video autoplay loop muted plays-inline class="background-clip"> <!-- Sets the video to autoplay on mute, class background-clip in on style.css -->
+        <source src="hr.mp4" type="video/mp4">
+        </video>
+    
+    <div class="top-middle-text">
+            <h1 style="color: #5c30fd;">Welcome</h1>
+    </div>
+    
+    <div class="content"> <!-- class-content in style.css, puts the text on the middle of the page -->
+            <h1>Jon P. CNSA Student at TSCT</h1> <!-- class-content h1, style.css-->
+            <a href="VPN.html">Explore</a> <!-- class-content a, style.css-->
+    </div> 
+
+        <nav role="navigation">
+            <div id="menuToggle"> <!-- menu.css-->
+              
+              <input type="checkbox" />
+              <!--A fake hidden checkbox is used as click reciever.-->
+
+              <span></span><!-- Spans to act as a hamburger. -->
+              <span></span> <!-- the 3 span sets the 3 lines of the hamburger -->
+              <span></span><!-- Spans to act as a hamburger. -->
+
+              <ul id="menu"> <!-- menu.css-->
+               <a href="index.html"><li>Home</li></a>
+               <a href="VPN.html"><li>VPN</li></a>
+               <a href="main.html"><li>About</li></a>
+               <!-- The menu has to be inside of the button. -->
+
+              </ul>
+                
+            </div>
+        </nav>
+
+    </div>
+
+<img src="thumbnail.jpg" alt="logo" class="logo"> <!-- Website logo on the top left -->
+
+</body>
+</html>
