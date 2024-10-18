@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JON</title>
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="jp.JPG" sizes="16x16">    
+
+<style>
+    .word {
+      width: 90%; /* Set the width to a Word's page size */
+      height: 90vh; /* Set the height to a Word's page size */
+      margin: 25px; /* Center the div on the page */
+      padding: 20px; /* Add some padding */
+      border: 2px solid #000; /* Add a border */
+      border-radius:10px; /* Rounds the borders */
+      background-color: #fff; /* Set background color */
+      font-family: Arial, sans-serif; /* Set font */
+      line-height: 2; /* Double space */
+      box-shadow: 0px 0px 70px blue; /* Add a subtle shadow */
+      flex: 1;
+    }
+    body {
+           background-attachment:fixed;
+           background-color: gray;
+           background-size: 100% 100%;
+           overscroll-behavior: none;
+           margin: 0;
+           display: flex;
+           flex-direction: column;
+           min-height: 100vh;
+           /* prevents text from being selected */
+           -webkit-user-select: none; /* Safari */
+           -ms-user-select: none; /* IE 10 and IE 11 */
+           user-select: none; /* Standard syntax */
+           /* prevents text from being selected */
+       }
+    .top-middle-text {
+          background-color: black;
+           color: white;
+           padding: 40px 40px;
+           text-align: center;
+           /* position: absolute;
+           color: white;
+           top: 20px;
+           left: 47%;
+           transform: translateX(-50); */
+       }
+    .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    div.a{
+            padding: 10px;
+            font-size: 25px;
+        }
+    a{
+            text-decoration: none;
+            color: black; 
+        }
+ 
+    a:hover{
+        color: #5c30fd;
+        text-decoration: underline;
+    }
+    
+    ol{
+        padding: 0px 25px;
+        text-align: left;
+        font-size: 20pt;
+        font-weight: lighter;
+    }
+    ul{
+        padding: 0px 25px;
+    }
+    h3{
+        font-size: 20pt;
+        font-weight: lighter;
+    }
+   </style>
+</head>
+
+<body id="BD" style="background-color: white;">
+    <div class="word">
+    <nav>
+    <div id="menuToggle">
+
+      <input type="checkbox" />
+
+      <!--
+      spans act as a hamburger.
+
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+      the menu has to be inside of the button.
+      -->
+      <ul id="menu">
+        <a href="index.html"><li>Home</li></a>
+          <a href="VPN.html"><li>VPN</li></a>
+        <a href="main.html"><li>About</li></a>
+      </ul>
+    </div>
+  </nav>
+    
+    <div>
+   
+        <h1 style="text-align: center; font-size: 50px;"><span>VPN</span></h1>
+
+    </div>
+    
+    <div class="a" style="font-size: 25px;" >
+    <h1>Table of content</h1>
+        <ul>
+        <li><a href="#WVPN">What is a VPN?</a></li>
+        <li><a href="#HVW">How does a VPN works?</a></li>
+        <li><a href="#WSV">Why should you use a VPN?</a></li>
+        <li><a href="#VPNP">VPN protocols</a></li>
+        <li><a href="#TVPN">Types of VPNs</a></li>
+        <li><a href="#PC">VPN pros & cons</a></li>
+        <li><a href="#FvP">Free vs paid VPNs</a></li>
+        <li><a href="#Con">Conclusion</a></li>
+        </ul>
+    </div>
+    
+    <div id="WVPN" class="a">
+    <h1>What is a VPN?</h1>
+        
+        <h3>A Virtual Private Network or best known for its short abbreviation as a VPN, is a program that establishes a secure, private, and encrypted connection between networking devices over the internet. This allows users to transfer data between devices via a private network, over a public internet connection. By encrypting the data VPNs protect important information from unauthorized access and malicious hackers. VPNs also allow users to browse the internet or any web anonymously preventing websites from tracking or collecting users’ data. VPNs are like real estate agents they are like an intermediary between you and the device to which you are trying to send the data to.  </h3>
+    </div>
+        
+    <div id="HVW" class="a">
+    <h1>How Does a VPN Works?</h1>
+        
+        <h3>VPNs create a secure connection which is called a tunnel between your device and the internet, encrypting the data, and sending it to a server controlled by the VPN provider. When someone connects to a VPN the user's data travels through the tunnel, which protects the data from being seen by anyone. The tunnel is like a conversation between two people. Also, when someone connects to a VPN, they are given an IP address that can be located anywhere around the world. The given IP address acts as your real IP address and if someone tries to track it, it will give them a random location and not your actual one. VPNs are like ACLs on routers, before the data goes out it gets encrypted. The encryption makes sure to hide the data that you are sending from anyone who is trying to intercept it, this works not only on private networks but also on public networks like the ones in airports. </h3>
+    </div>
+        
+    <div id="WSV" class="a">
+    <h1>Why should you use a VPN?</h1>
+        
+        <h3>There are many reasons on why you should use a VPN. The main reason why you should use a VPN is because VPNs allow you to access the internet without having to worry about your personal information being stolen, leaked, or used for malicious purposes. VPNs are a great way to keep your information secure. Public networks are easy targets for hackers, so using VPNs on public networks will make sure that things like your passwords stay secure and encrypted. VPN can also help you gain access to restricted content like movies that might be blocked in your area😉. VPNs make it seem like you are in a different location allowing you to see restricted content. VPNs are great for people traveling outside of the US because the US usually doesn’t restrict content as much as other countries. So, if you want to browse the web anonymously, access restricted content or if you just want to keep your data protected and secure you should definitely use a VPN. </h3>
+    </div>
+
+        <div id="VPNP" class="a">
+        <h1>VPN protocols</h1>
+
+            <h3>A VPN protocol is a set of rules that regulates the communication between networking devices and VPNs. VPN protocols make sure that there is an efficient and secure transmission of the data over the internet by encrypting the data that is being sent or received. Some of the most common VPN protocols are Open VPN, WireGuard, IPSec, L2TP/IPsec and SSTP.Open VPN is an open-source VPN and is known for its strong security. The WireGuard protocol is a newer protocol designed to provide higher performance and better security than traditional VPN protocol. IPSec – Internet Protocol Security protocol is known for secure communication between devices by encryption data packets. L2TP/IPSec – Layer 2 Tunneling Protocol with IPSec is also known for is high level of security. It uses IPSec because L2PT doesn’t offer encryption. SSTP – Secure Socket Tunneling Protocol is a protocol designed by Microsoft to provide secure communications over SSL channels. </h3>
+        </div>
+
+        <div id="TVPN" class="a">
+        <h1>Types of VPNs</h1>
+
+            <h3>There are many different types of VPNs with different purposes, security, and technology, some of the most popular ones are Personal VPNs, Remote Access VPNs, Site to Site VPNs, Double VPNs, SSL VPNs, and PPTP VPNs. There are many others out there, but these are some of the most known and popular ones. Personal VPN – This is the type of VPN that most people like me use to navigate the web, protect my data, and access restricted content😉. Remote access VPN – This is mostly used by companies and organizations to allow their employees to access the company/organization information from a remote location like home or a second office. Site-to-site VPN – This is also used by companies and organizations to connect different branches of the company/organization together. Double VPN – This is an extra secure type of VPN that sends your data through 2 tunnels instead of 1 to add an extra layer of security. This is basically 2 VPNs combined together to offer better encryption. SSL VPN – This is a VPN that uses the SSL (Secured Socket Layer) protocol to provide a secure and encrypted connection between a device and a private network. PPTP – This is one of the oldest VPN protocols which is less secure than the newest one that we have today.
+ </h3>
+        </div>
+
+        <div id="WSV" class="a">
+        <h1>Why should you use a VPN?</h1>
+
+            <h3>There are many reasons on why you should use a VPN. The main reason why you should use a VPN is because VPNs allow you to access the internet without having to worry about your personal information being stolen, leaked, or used for malicious purposes. VPNs are a great way to keep your information secure. Public networks are easy targets for hackers, so using VPNs on public networks will make sure that things like your passwords stay secure and encrypted. VPN can also help you gain access to restricted content like movies that might be blocked in your area😉. VPNs make it seem like you are in a different location allowing you to see restricted content. VPNs are great for people traveling outside of the US because the US usually doesn’t restrict content as much as other countries. So, if you want to browse the web anonymously, access restricted content or if you just want to keep your data protected and secure you should definitely use a VPN. </h3>
+        </div>
+
+        <table>
+            <tr id="PC" style="font-size: 50px;">
+                <th style="text-align: left">Pros</th>
+                <th style="text-align: left">Cons</th>
+            </tr>
+
+                <tr>
+                <td>
+                <ol>                    
+                    <li>Security</li>
+                    <li>Privacy</li>
+                    <li>Access to restricted content</li>
+                    <li>Secure and anonymous browsing</li>
+                    <li>Secured remote access</li>
+                    <li>Secure data tranfer</li>
+                    <li>Can proctect users from DDoS attacks</li>
+                 </ol>
+                 </td>
+
+                 <td>
+                 <ol>
+                     <li>Price</li>
+                     <li>Limited servers with free versions</li>
+                     <li>Slow or limited speed with free versions</li>
+                     <li>Might not be supported by some webites</li>
+                     <li>Some VPNs can be insecure</li>
+                     <li>Some VPNs providers might collect your data</li>
+                     <li>Can increase latency</li>
+                 </ol>
+                 </td>
+
+                 </tr>
+        </table>
+        
+    <div id="FvP" class="a">
+    <h1>Free vs paid VPNs</h1>
+
+        <h3>The number one reason why free VPNs are a good choice and why people like them is because they are free, but that doesn’t mean that they are the best. Free VPNs don’t offer much and have limitations, like limited servers and a limited amount of data speed. Having a limited amount of servers can lead to slow internet speed. on the other hand, paid VPNs are more safe to use than free VPNs and are better at protecting users’ data. Paid VPNs are also usually faster and offer better performance. While free VPNs are a good option, they just don’t have the same speed and the same amount of security as a paid VPN.. </h3>
+    </div>
+
+        <div id="Con" class="a">
+        <h1>Conclusion</h1>
+
+            <h3>In conclusion, VPNs are a very good online tool that people can use to keep their online data private and secure. VPNs encrypt internet packets and protect users against hackers and potential cyberattacks. They can also allow users to access restricted and blocked content in certain countries or browse the internet anonymously. While VPNs are a really good method to keep users data safe it is important to choose the right VPN depending on the user wants and needs. Keeping your online data nowadays can be hard and as technology advances it will become even harder, but VPNs are a great tool that can help in keeping that data private and secure. </h3>
+            <a style="text-align: right;" href="#BD"><p>Return to top</p></a>
+        </div>
+
+        <div style="text-align: center; font-size: 25px;">
+        <a href="workcited.html">Work Cited</a>
+        </div>
+        
+</div>
+
+    <div class="footer">
+        <h1>Copyright &copy; 2024 CNSA.Lab. All rights reserved.</h1>
+    </div>
+
+</body>
+</html>
